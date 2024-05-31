@@ -1,0 +1,75 @@
+[debug] [2024-05-29T01:08:24.114Z] ----------------------------------------------------------------------
+[debug] [2024-05-29T01:08:24.117Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\liben\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-29T01:08:24.117Z] CLI Version:   13.10.2
+[debug] [2024-05-29T01:08:24.118Z] Platform:      win32
+[debug] [2024-05-29T01:08:24.118Z] Node Version:  v20.11.1
+[debug] [2024-05-29T01:08:24.118Z] Time:          Tue May 28 2024 18:08:24 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-05-29T01:08:24.118Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-29T01:08:24.181Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-29T01:08:24.181Z] > authorizing via signed-in user (libensisayebren1010@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\liben\OneDrive\Desktop\Evangadi_Amazon_Clone-main\Evangadi_Amazon_Clone-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-29T01:08:43.538Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-05-29T01:08:43.927Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-05-29T01:08:43.927Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project clone-d88e6 (Amazon-clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-05-29T01:09:15.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-29T01:09:15.345Z] > authorizing via signed-in user (libensisayebren1010@gmail.com)
+[debug] [2024-05-29T01:09:15.345Z] [iam] checking project clone-d88e6 for permissions ["firebase.projects.get"]
+[debug] [2024-05-29T01:09:15.346Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d88e6:testIamPermissions [none]
+[debug] [2024-05-29T01:09:15.346Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d88e6:testIamPermissions x-goog-quota-user=projects/clone-d88e6
+[debug] [2024-05-29T01:09:15.346Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d88e6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-29T01:09:15.492Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d88e6:testIamPermissions 200
+[debug] [2024-05-29T01:09:15.492Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d88e6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-29T01:09:15.493Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-29T01:09:15.493Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-d88e6
+[debug] [2024-05-29T01:09:15.495Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-29T01:09:15.495Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/clone-d88e6
+[debug] [2024-05-29T01:09:15.948Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-29T01:09:15.948Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-05-29T01:09:15.949Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-05-29T01:09:15.949Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/clone-d88e6
+[debug] [2024-05-29T01:09:15.953Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-29T01:09:15.954Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-05-29T01:09:16.599Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-05-29T01:09:16.599Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-05-29T01:09:26.609Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-29T01:09:26.610Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-d88e6
+[debug] [2024-05-29T01:09:27.076Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-29T01:09:27.076Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-d88e6/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
